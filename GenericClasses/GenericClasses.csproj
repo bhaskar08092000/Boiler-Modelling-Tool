@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BE2B088-AA37-4F2F-BE7D-2AB99651CBAB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GenericClasses</RootNamespace>
+    <AssemblyName>GenericClasses</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BoilerModellingTool.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BoilerModellingTool\bin\BoilerModellingTool.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="BoilerModellingTool.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BoilerModellingTool\bin\BoilerModellingTool.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="BoilerModellingTool.SC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BoilerModellingTool\bin\BoilerModellingTool.SC.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\BoilerModellingTool\packages\Microsoft.Practices.EnterpriseLibrary.Common.dll.3.1.0\lib\2.0\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\BoilerAssignment\BoilerIntegrated_11-08\BoilerDesign\GenericClasses\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\BoilerModellingTool\packages\Microsoft.Practices.ObjectBuilder.dll.3.1.0\lib\2.0\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlphanumComparatorFast.cs" />
+    <Compile Include="Cal_HeatAbsorption_Calculation.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class_13A_Calculation.cs" />
+    <Compile Include="Class_13B_Calculation.cs" />
+    <Compile Include="Class_15A_Calculation.cs" />
+    <Compile Include="Class_15B_Calculation.cs" />
+    <Compile Include="Class_16A_Calculation.cs" />
+    <Compile Include="Class_16B_Calculation.cs" />
+    <Compile Include="Class_17A_Calculation.cs" />
+    <Compile Include="Class_1A_Calculation.cs" />
+    <Compile Include="Class_2A_Calculation.cs" />
+    <Compile Include="Class_3A_Calculation.cs" />
+    <Compile Include="Class_4A_Calculation.cs" />
+    <Compile Include="Class_4B_Calculation.cs" />
+    <Compile Include="Class_5A_Calculation.cs" />
+    <Compile Include="Class_5B_Calculation.cs" />
+    <Compile Include="Class_5C_Calculation.cs" />
+    <Compile Include="Class_6A_Calculation.cs" />
+    <Compile Include="Class_6B_Calculation.cs" />
+    <Compile Include="Class_Flow_Calculation.cs" />
+    <Compile Include="Class_GenericA_Calculation.cs" />
+    <Compile Include="Class_GenericB_Calculation.cs" />
+    <Compile Include="Class_GenericB_Calculation_Backpass.cs" />
+    <Compile Include="Class_Metal_Temperature_Calculation.cs" />
+    <Compile Include="Class_Pressure_Calculation.cs" />
+    <Compile Include="Class_UpperFurnace_Part_B.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stream_Macros.cs" />
+    <Compile Include="S_parameter_generic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
